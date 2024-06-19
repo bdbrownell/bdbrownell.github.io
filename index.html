@@ -1,1 +1,201 @@
-First commit
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Brownell - Personal Webpage</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            line-height: 1.6;
+        }
+        header {
+            background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+            color: #fff;
+            padding: 4rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        header:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        header h1 {
+            position: relative;
+            z-index: 1;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        header p {
+            position: relative;
+            z-index: 1;
+            font-size: 1.2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #34495e;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .contact-info {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info li {
+            margin-bottom: 0.5rem;
+        }
+        .contact-info a {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+        .project, .experience, .skills {
+            margin-bottom: 2rem;
+        }
+        .project, .experience {
+            background: rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        ul {
+            margin: 0;
+            padding: 0 0 0 1.2rem;
+        }
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills ul li {
+            background: #1abc9c;
+            color: #fff;
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        footer {
+            background: #34495e;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+        }
+        a {
+            color: #1abc9c;
+        }
+        .section-bg {
+            background: url('https://images.unsplash.com/photo-1560523160-dfa2a726dcce?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brandon Brownell</h1>
+        <p>Software Engineer based in Philadelphia, PA</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a seasoned software engineer with extensive experience in architecting, coding, deploying, and supporting complex software systems. With a strong background in cloud technologies and DevOps methodologies, I have a proven track record of delivering high-impact projects for Fortune 50 clients.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="experience">
+                <h3>Fulfilld, Denver, CO</h3>
+                <p><strong>Senior Software Engineer</strong> (Jan 2023 - Present)</p>
+                <ul>
+                    <li>Orchestrated the secure setup and observability of Google Cloud infrastructure utilizing Terraform.</li>
+                    <li>Fostered collaboration between development teams and Product Managers to streamline operations and expedite high-impact product releases.</li>
+                    <li>Contributed to the strategic direction of product development and business growth.</li>
+                </ul>
+            </div>
+            
+            <div class="experience">
+                <h3>Insight Global, Philadelphia, PA</h3>
+                <p><strong>Senior Consultant - Google Cloud Platform</strong> (July 2023 - Dec 2023)</p>
+                <ul>
+                    <li>Provided expert consulting services for an international team of 50+ Engineers on GCP infrastructure.</li>
+                    <li>Designed scalable, secure, and robust cloud solutions using Google Cloud services.</li>
+                    <li>Configured and maintained CI/CD pipelines leveraging Cloud Build, Cloud Deploy, Jenkins, and Harness.</li>
+                </ul>
+            </div>
+            
+            <div class="experience">
+                <h3>Implico Inc, Plymouth Meeting, PA</h3>
+                <p><strong>Principal Software Engineer</strong> (July 2018 - June 2023)</p>
+                <ul>
+                    <li>Owned the end-to-end development, implementation, and support of custom software solutions for fuel delivery operations.</li>
+                    <li>Architected and coded a robust backend solution in NodeJS, Express, and PostgreSQL.</li>
+                    <li>Mentored junior developers in the adoption of modern DevOps practices.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Key Projects</h2>
+            <div class="project">
+                <h3>Fuel Station Monitoring System</h3>
+                <p>Developed a comprehensive monitoring system for fuel stations, featuring a web-based dashboard that provided real-time and historical data analysis. The project involved integrating multiple data sources, implementing complex networking configurations, and ensuring secure, reliable connections to remote sites.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>NodeJS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>PostgreSQL</li>
+                <li>Express</li>
+                <li>Jest</li>
+                <li>React</li>
+                <li>React Native</li>
+                <li>Google Cloud Platform</li>
+                <li>AWS</li>
+                <li>MongoDB</li>
+                <li>BigQuery</li>
+                <li>Linux (Debian, Alpine)</li>
+                <li>MacOS</li>
+                <li>Windows</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <ul class="contact-info">
+                <li>Email: <a href="mailto:brownell.brandon@gmail.com">brownell.brandon@gmail.com</a></li>
+                <li>Phone: (570) 815-7531</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/brandonbrownell">linkedin.com/in/brandonbrownell</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 Brandon Brownell. All rights reserved.
+    </footer>
+</body>
+</html>
